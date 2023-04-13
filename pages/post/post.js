@@ -1,17 +1,38 @@
 // pages/post/post.js
 Page({
-
-    /**
-     * Page initial data
-     */
     data: {
-
     },
 
     /**
      * Lifecycle function--Called when page load
      */
-    onLoad(options) {
+    onLoad: function() {
+        var postList = [{
+            date: "April 13 2023",
+            title: "明亮的彩虹",
+            postImg:"http://124.221.215.40/avatar/icon5.jpg",
+            avatar: "http://124.221.215.40/avatar/icon5.jpg",
+            content:"美丽的彩虹千千万万，只有这道彩虹独一无二",
+            readingNum: 92,
+            collectionNum: {
+                array:[108]
+            },
+            commentNum: 7
+        },{
+            date: "April 13 2023",
+            title: "可爱的小宝",
+            postImg:"http://124.221.215.40/avatar/automan.png",
+            avatar: "http://124.221.215.40/avatar/icon5.jpg",
+            content:"某年某月某日，奥特曼来到地球，并将他的名字改成谢小宝",
+            readingNum: 91,
+            collectionNum: {
+                array:[105]
+            },
+            commentNum: 3
+        }]
+        this.setData({
+            postList:postList
+        })
 
     },
 

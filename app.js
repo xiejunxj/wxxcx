@@ -14,6 +14,10 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
+    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
+    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
+
   }
 })
