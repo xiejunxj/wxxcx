@@ -1,0 +1,7 @@
+<view class="container">
+<image class="avatar" src="/images/avatar/icon5.jpg"></image>
+<text class="motto">欢迎来到我的世界</text>
+<view class="journey-container">
+    <text class="journey">开启快乐之旅吧</text>
+</view>
+</view>

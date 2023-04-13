@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/post/post",
+    "pages/intro/intro"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ECC0A8"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
