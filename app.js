@@ -2,6 +2,13 @@
 App({
   onLaunch() {
     // 展示本地存储能力
+    wx.clearStorageSync();
+    var storageData = wx.getStorageSync('postList');
+    if (!storageData) {
+        var dataObj = require("data/data.js");
+        wx.clearStorageSync();
+        wx.setStorageSync('postList', dataObj.postList);
+    }
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -14,10 +21,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
-    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
-    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
-    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
-
+    userInfo: null
   }
 })
