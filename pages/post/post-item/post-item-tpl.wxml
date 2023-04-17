@@ -1,21 +1,19 @@
 <template name="postItemTpl">
     <view class = "post-container">
-        <view class="post-container">
-            <view class = "post-author-date">
-                <image src="{{avatar}}"></image>
-                <text>{{date}}</text>
-            </view>
-            <text class="post-title">{{title}}</text>
-            <image class="post-image" mode="aspectFill" src="{{postImg}}"></image>
-            <text class="post-content">{{content}}</text>
-            <view class="post-like">
-                <image src="{{collectImg}}"></image>
-                <text>{{collectionNum}}</text>
-                <image src="{{viewImg}}"></image>
-                <text>{{readingNum}}</text>
-                <image src="{{messageImg}}"></image>
-                <text>{{commentNum}}</text>
-            </view>
+        <view class = "post-author-date">
+            <image src="{{avatar}}"></image>
+            <text>{{date}}</text>
+        </view>
+        <text class="post-title">{{title}}</text>
+        <image class="post-image" mode="aspectFill" src="{{postImg}}"></image>
+        <text class="post-content">{{content}}</text>
+        <view class="post-like">
+            <image src="{{collectImg}}"></image>
+            <text>{{collectionNum}}</text>
+            <image src="{{viewImg}}"></image>
+            <text>{{readingNum}}</text>
+            <image src="{{messageImg}}"></image>
+            <text>{{commentNum}}</text>
         </view>
     </view>
 </template>

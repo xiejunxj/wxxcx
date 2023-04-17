@@ -1,4 +1,6 @@
-// pages/logs/logs.js
+import {DBPost} from '../../../db/DBPost.js';
+
+// pages/post/post-comment/post-comment.js
 Page({
 
     /**
@@ -12,7 +14,12 @@ Page({
      * Lifecycle function--Called when page load
      */
     onLoad(options) {
-
+        var postId = options.id;
+        this.dbPost = new DBPost(postId)
+        var comments = this.dbPost.getCommentData();
+        this.setData({
+            comments: comments
+        })
     },
 
     /**
