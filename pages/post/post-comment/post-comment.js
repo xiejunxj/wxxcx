@@ -7,7 +7,11 @@ Page({
      * Page initial data
      */
     data: {
-
+        useKeyboardFlag: false,
+        wxAppKeyboardIcon: "http://124.221.215.40/icon/wx_app_keyboard.png",
+        wxAppAddIcon:"http://124.221.215.40/icon/wx_app_add.png",
+        keyboardInputValue:"",
+        avatar: "http://124.221.215.40/avatar/icon5.jpg"
     },
 
     /**
@@ -21,7 +25,52 @@ Page({
             comments: comments
         })
     },
-
+    switchInputType(event) {
+        this.setData({
+            useKeyboardFlag: !this.data.useKeyboardFlag
+        })
+    },
+    bindCommentInput(event) {
+      var val = event.detail.value;
+      this.data.keyboardInputValue = val;  
+    },
+    submitComment(event) {
+        var newData = {
+            username:"青石",
+            avatar: this.data.avatar,
+            content: {
+                txt: this.data.keyboardInputValue
+            },
+            create_time: new Date().getTime()/1000
+        };
+        console.log(newData);
+        if (!newData.content.txt) {
+            return;
+        }
+        this.dbPost.newComment(newData);
+        this.showCommitSuccessToast();
+        this.bindCommentData();
+        this.resetAllDefaultStatus();
+    },
+    showCommitSuccessToast() {
+        wx.showToast({
+          title: '评论成功',
+          duration: 1000,
+          icon: 'success'
+        })
+    },
+    bindCommentData() {
+        var comments = this.dbPost.getCommentData();
+        console.log(comments);
+        this.setData({
+            comments: comments
+        })
+    },
+    resetAllDefaultStatus() {
+        this.setData({
+            keyboardInputValue:""
+        });
+    },
     /**
      * Lifecycle function--Called when page is initially rendered
      */

@@ -20,4 +20,14 @@
             </view>
         </block>
     </view>
+    <view class="input-box">
+        <view class="send-msg-box">
+            <view hidden="{{useKeyboardFlag}}" class="input-item">
+                <image src="{{wxAppKeyboardIcon}}" class="comment-icon keyboard-icon"></image>
+                <input class="input keyboard-input" value="{{keyboardInputValue}}" bindinput="bindCommentInput" placeholder="请输入文字" />
+            </view>
+            <image class="comment-icon add-icon" src="{{wxAppAddIcon}}" catchtap="sendMoreMsg"></image>
+            <view class="submit-btn" catchtap="submitComment">发送</view>
+        </view>
+    </view>
 </view>

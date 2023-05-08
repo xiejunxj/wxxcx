@@ -27,6 +27,9 @@ class DBPost {
             }
         }
     }
+    newComment(newComment) {
+        this.updatePostData('comment', newComment);
+    }
     getCommentData() {
         var itemData = this.getPostItemById().data;
         itemData.comments.sort(this.compareWithTime);
@@ -55,7 +58,7 @@ class DBPost {
     up() {
         return this.updatePostData('up');
     }
-    updatePostData(category) {
+    updatePostData(category, newComment) {
         var itemData = this.getPostItemById();
         var postData = itemData.data;
         var allPostData = this.getAllPostData();
@@ -77,6 +80,9 @@ class DBPost {
                     postData.upNum--;
                     postData.upStatus = false;
                 }
+            case 'comment':
+                postData.comments.push(newComment);
+                postData.commentNum++;
             default:
                 break;
         }
