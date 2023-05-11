@@ -15,7 +15,12 @@ Page({
             postList: dbPost.getAllPostData()
         })
     },
-
+    onSwiperTap(event) {
+        var postId = event.target.dataset.postId;
+        wx.navigateTo({
+          url: 'post-detail/post-detail?id=' + postId,
+        })
+    },
     onTapToDetail: function(event) {
         var postId = event.currentTarget.dataset.postId;
         console.log("postId is " + postId);

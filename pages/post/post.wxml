@@ -1,15 +1,12 @@
 <!--pages/post/post.wxml-->
 <import src="./post-item/post-item-tpl.wxml"/>
 <view>
-    <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+    <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
         <swiper-item>
-            <image class="avatar" src="http://124.221.215.40/avatar/icon.png"/>
+            <image class="avatar" src="http://124.221.215.40/avatar/automan.png" data-post-id="2"/>
         </swiper-item>
         <swiper-item>
-            <image class="avatar" src="http://124.221.215.40/avatar/automan.png"/>
-        </swiper-item>
-        <swiper-item>
-            <image class="avatar" src="http://124.221.215.40/avatar/icon5.jpg"/>
+            <image class="avatar" src="http://124.221.215.40/avatar/icon5.jpg" data-post-id="1"/>
         </swiper-item>
     </swiper>
     <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">

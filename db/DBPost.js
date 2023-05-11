@@ -15,6 +15,9 @@ class DBPost {
     execStorageSync(data) {
         wx.setStorageSync(this.storageKeyName, data)
     }
+    addReadingTimes() {
+        this.updatePostData('reading');
+    }
     getPostItemById() {
         var postData = this.getAllPostData();
         var len = postData.length;
@@ -83,6 +86,9 @@ class DBPost {
             case 'comment':
                 postData.comments.push(newComment);
                 postData.commentNum++;
+            case 'reading':
+                postData.readingNum++;
+                break;
             default:
                 break;
         }

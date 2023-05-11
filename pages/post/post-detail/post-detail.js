@@ -1,13 +1,19 @@
 import {DBPost} from '../../../db/DBPost.js'
+var app = getApp();
+console.log(app);
 Page({
 
     /**
      * Page initial data
      */
     data: {
-
+        isPlayingMusic:false
     },
-
+    initMusicStatus() {
+        this.setData({
+            isPlayingMusic: app.globalData.isPlayingMusic
+        })
+    },
     /**
      * Lifecycle function--Called when page load
      */
@@ -17,9 +23,29 @@ Page({
         this.postData = this.dbPost.getPostItemById().data;
         this.setData({
             post: this.postData
-        })
+        });
+        this.addReadingTimes();
+        this.setMusicMonitor();
+        this.initMusicStatus();
     },
-
+    setMusicMonitor() {
+        var that = this;
+        wx.getBackgroundAudioManager().onEnded(function() {
+            console.log("music is done");
+            that.setData({isPlayingMusic:false})
+            app.globalData.isPlayingMusic = false;
+        });
+        wx.getBackgroundAudioManager().onPlay(function(){
+            that.setData({isPlayingMusic:true});
+            app.globalData.isPlayingMusic = true;
+        });
+        wx.getBackgroundAudioManager().onPause(
+            function() {
+                that.setData({isPlayingMusic:false});
+                app.globalData.isPlayingMusic = false;
+            }
+        );
+    },
     /**
      * Lifecycle function--Called when page is initially rendered
      */
@@ -41,6 +67,22 @@ Page({
           mask: true
         })
     },
+    onMusicTap(event) {
+        if (this.data.isPlayingMusic) {
+            wx.getBackgroundAudioManager().pause();
+            this.setData({isPlayingMusic:false});
+            app.globalData.isPlayingMusic = false;
+        } else {
+            wx.getBackgroundAudioManager().src = 'http://124.221.215.40/yujian.mp3';
+            wx.getBackgroundAudioManager().coverImgUrl = 'http://124.221.215.40/yujian.png';
+            wx.getBackgroundAudioManager().title = '遇见';
+            wx.getBackgroundAudioManager().play(),
+            this.setData(
+                {isPlayingMusic:true}
+            );
+            app.globalData.isPlayingMusic = true;
+        }
+    },
     onUpTap(event) {
         var newData = this.dbPost.up();
         this.setData({
@@ -60,6 +102,10 @@ Page({
           url: '../post-comment/post-comment?id=' + id
         })
     },
+
+    addReadingTimes() {
+        this.dbPost.addReadingTimes();
+    },
     /**
      * Lifecycle function--Called when page show
      */
@@ -78,7 +124,6 @@ Page({
      * Lifecycle function--Called when page unload
      */
     onUnload() {
-
     },
 
     /**
@@ -99,6 +144,10 @@ Page({
      * Called when user click on the top right corner to share
      */
     onShareAppMessage() {
-
+        return {
+            title: this.postData.title,
+            desc: this.postData.content,
+            path: '/pages/post/post-detail/post-detail'
+        }
     }
 })
