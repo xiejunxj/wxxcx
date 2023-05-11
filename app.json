@@ -6,7 +6,8 @@
     "pages/post/post-comment/post-comment",
     "pages/movie/movie",
     "pages/movie/more-movie/more-movie",
-    "pages/movie/movie-detail/movie-detail"
+    "pages/movie/movie-detail/movie-detail",
+    "pages/myself/myself"
   ],
   "window":{
     "navigationBarBackgroundColor": "#4A6141",
@@ -19,13 +20,7 @@
       "position":"bottom",
       "list": [
         {
-            "pagePath": "pages/movie/movie",
-            "text":"娱乐时光",
-            "iconPath":"images/icon/wx_app_movie.png",
-            "selectedIconPath":"images/icon/wx_app_movie@HL.png"
-        },
-        {
-            "pagePath": "pages/intro/intro",
+            "pagePath": "pages/myself/myself",
             "text":"我的传奇",
             "iconPath": "images/icon/my_intro.png",
             "selectedIconPath": "images/icon/my_intro@HL.png"
@@ -35,7 +30,13 @@
             "text":"文采斐然",
             "iconPath":"images/icon/wx_app_news.png",
             "selectedIconPath":"images/icon/wx_app_news@HL.png"
-          }
+        },
+        {
+            "pagePath": "pages/movie/movie",
+            "text":"娱乐时光",
+            "iconPath":"images/icon/wx_app_movie.png",
+            "selectedIconPath":"images/icon/wx_app_movie@HL.png"
+        }
       ]
   },
   "networkTimeout": {

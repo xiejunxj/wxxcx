@@ -1,0 +1,5 @@
+<view class="container">
+    <text class="title">姚大宝</text>
+    <image class="img" src="http://124.221.215.40/401857074.jpg" mode="aspectFill"/>
+    <view class="desc">姚大宝，浙江傻大个大学毕业，后于上海蓝翔学院研究微藻，荣获姚大宝称号</view>
+</view>

@@ -1,7 +1,7 @@
 Page({
     onTapJump: function(event) {
         wx.switchTab({
-            url: '../post/post',
+            url: '../myself/myself',
             success:function() {
                 console.log("jump success")
             },

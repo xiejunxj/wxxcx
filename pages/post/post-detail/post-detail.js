@@ -1,6 +1,5 @@
 import {DBPost} from '../../../db/DBPost.js'
-var app = getApp();
-console.log(app);
+var app = getApp()
 Page({
 
     /**
