@@ -43,10 +43,10 @@ var postList = [{
 },{
     postId: 2,
     date: "April 13 2023",
-    title: "奥特曼之谢小宝篇",
-    postImg:"http://124.221.215.40/avatar/automan.png",
+    title: "湖人止步西决后，詹姆斯考虑退役",
+    postImg:"http://124.221.215.40/avatar/lebron.png",
     avatar: "http://124.221.215.40/avatar/icon5.jpg",
-    content:"某年某月某日，奥特曼来到地球，并将他的名字改成谢小宝",
+    content:"湖人止步西决后，詹姆斯考虑退役事件引热议，难道老詹真的要告别NBA？多位名记表示预计詹姆斯不会退役，知情人士更是直言詹姆斯下赛季会回归的",
     readingNum: 91,
     collectionNum: 105,
     commentNum: 3,

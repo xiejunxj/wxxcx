@@ -3,7 +3,7 @@
 <view>
     <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
         <swiper-item>
-            <image class="avatar" src="http://124.221.215.40/avatar/automan.png" data-post-id="2"/>
+            <image class="avatar" src="http://124.221.215.40/avatar/lebron.png" data-post-id="2"/>
         </swiper-item>
         <swiper-item>
             <image class="avatar" src="http://124.221.215.40/avatar/icon5.jpg" data-post-id="1"/>
