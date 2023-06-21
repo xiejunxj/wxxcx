@@ -1,29 +1,29 @@
-var mainImg = "http://124.221.215.40/avatar/icon5.jpg"
+var mainImg = "https://124.221.215.40/avatar/icon5.jpg"
 var postList = [{
     postId: 1,
     date: "April 13 2023",
     title: "明亮的彩虹",
-    postImg:"http://124.221.215.40/avatar/icon5.jpg",
-    avatar: "http://124.221.215.40/avatar/icon5.jpg",
+    postImg:"https://124.221.215.40/avatar/icon5.jpg",
+    avatar: "https://124.221.215.40/avatar/icon5.jpg",
     content:"美丽的彩虹千千万万，只有这道彩虹独一无二",
     readingNum: 92,
     collectionNum: 108,
     commentNum: 7,
-    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
-    viewImg: "http://124.221.215.40/icon/wx_app_view.png",
-    messageImg: "http://124.221.215.40/icon/wx_app_message.png",
-    collectedImg:"http://124.221.215.40/icon/wx_app_collected.png",
+    collectImg: "https://124.221.215.40/icon/wx_app_collect.png",
+    viewImg: "https://124.221.215.40/icon/wx_app_view.png",
+    messageImg: "https://124.221.215.40/icon/wx_app_message.png",
+    collectedImg:"https://124.221.215.40/icon/wx_app_collected.png",
     author:"姚大宝",
     dateTime:"3天前",
     collectStatus:false,
     upStatus:false,
     upNum:10,
-    upImg:"http://124.221.215.40/icon/wx_app_like.png",
-    upedImg:"http://124.221.215.40/icon/wx_app_liked.png",
+    upImg:"https://124.221.215.40/icon/wx_app_like.png",
+    upedImg:"https://124.221.215.40/icon/wx_app_liked.png",
     comments: [
         {
             username: '遥尘',
-            avatar:"http://124.221.215.40/avatar/icon4.png",
+            avatar:"https://124.221.215.40/avatar/icon4.png",
             content: {
                 txt:"彩虹图片满分, 内容完美"
             },
@@ -31,7 +31,7 @@ var postList = [{
         },
         {
             username: '天地',
-            avatar:"http://124.221.215.40/avatar/icon3.png",
+            avatar:"https://124.221.215.40/avatar/icon3.png",
             content: {
                 txt:"那一年的彩虹，那一年的美",
             },
@@ -44,27 +44,27 @@ var postList = [{
     postId: 2,
     date: "April 13 2023",
     title: "湖人止步西决后，詹姆斯考虑退役",
-    postImg:"http://124.221.215.40/avatar/lebron.png",
-    avatar: "http://124.221.215.40/avatar/icon5.jpg",
+    postImg:"https://124.221.215.40/avatar/lebron.png",
+    avatar: "https://124.221.215.40/avatar/icon5.jpg",
     content:"湖人止步西决后，詹姆斯考虑退役事件引热议，难道老詹真的要告别NBA？多位名记表示预计詹姆斯不会退役，知情人士更是直言詹姆斯下赛季会回归的",
     readingNum: 91,
     collectionNum: 105,
     commentNum: 3,
-    collectImg: "http://124.221.215.40/icon/wx_app_collect.png",
-    viewImg: "http://124.221.215.40/icon/wx_app_view.png",
-    messageImg: "http://124.221.215.40/icon/wx_app_message.png",
-    collectedImg:"http://124.221.215.40/icon/wx_app_collected.png",
+    collectImg: "https://124.221.215.40/icon/wx_app_collect.png",
+    viewImg: "https://124.221.215.40/icon/wx_app_view.png",
+    messageImg: "https://124.221.215.40/icon/wx_app_message.png",
+    collectedImg:"https://124.221.215.40/icon/wx_app_collected.png",
     author:"姚大宝",
     dateTime:"2天前",
     collectStatus:false,
     upStatus:false,
     upNum:10,
-    upImg:"http://124.221.215.40/icon/wx_app_like.png",
-    upedImg:"http://124.221.215.40/icon/wx_app_liked.png",
+    upImg:"https://124.221.215.40/icon/wx_app_like.png",
+    upedImg:"https://124.221.215.40/icon/wx_app_liked.png",
     comments: [
         {
             username: '遥尘',
-            avatar:"http://124.221.215.40/avatar/icon2.jpg",
+            avatar:"https://124.221.215.40/avatar/icon2.jpg",
             content: {
                 txt:"奥特曼，永远"
             },
@@ -72,7 +72,7 @@ var postList = [{
         },
         {
             username: '拿破仑',
-            avatar:"http://124.221.215.40/avatar/icon.png",
+            avatar:"https://124.221.215.40/avatar/icon.png",
             content: {
                 txt:"永远的光",
             },

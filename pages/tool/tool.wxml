@@ -1,0 +1,21 @@
+<view class="container">
+    <image class="avatar" src="http://124.221.215.40/avatar/icon5.jpg"></image>
+    <view class="category-item">
+        <block wx:for="{{cache}}">
+            <view class="detail-item" catchtap="{{item.tap}}">
+                <image src="{{item.iconurl}}"></image>
+                <text>{{item.title}}</text>
+                <view class="detail-item-btn"></view>
+            </view>
+        </block>
+    </view>
+    <view class="category-item">
+        <block wx:for="{{api}}">
+            <view class="detail-item" catchtap="{{item.tap}}">
+                <image src="{{item.iconurl}}"></image>
+                <text>{{item.title}}</text>
+                <view class="detail-item-btn"></view>
+            </view>
+        </block>
+    </view>
+</view>

@@ -7,7 +7,8 @@
     "pages/movie/movie",
     "pages/movie/more-movie/more-movie",
     "pages/movie/movie-detail/movie-detail",
-    "pages/myself/myself"
+    "pages/myself/myself",
+    "pages/tool/tool"
   ],
   "window":{
     "navigationBarBackgroundColor": "#4A6141",
@@ -36,6 +37,12 @@
             "text":"娱乐时光",
             "iconPath":"images/icon/wx_app_movie.png",
             "selectedIconPath":"images/icon/wx_app_movie@HL.png"
+        },
+        {
+            "pagePath": "pages/tool/tool",
+            "text":"实用工具",
+            "iconPath":"images/icon/wx_app_setting.png",
+            "selectedIconPath":"images/icon/wx_app_setting@HL.png"
         }
       ]
   },

@@ -1,6 +1,6 @@
 
 <view class="container">
-<image class="avatar" src="http://124.221.215.40/avatar/icon5.jpg"></image>
+<image class="avatar" src="https://124.221.215.40/avatar/icon5.jpg"></image>
 <text class="motto">欢迎来到我的世界</text>
 <view catchtap="onTapJump" class="journey-container">
     <text class="journey">开启快乐之旅吧</text>

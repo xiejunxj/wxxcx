@@ -1,5 +1,5 @@
 <view class="container">
     <text class="title">junxxie</text>
-    <image class="img" src="http://124.221.215.40/401857074.jpg" mode="aspectFill"/>
+    <image class="img" src="https://124.221.215.40/401857074.jpg" mode="aspectFill"/>
     <view class="desc">junxxie，上海蓝翔技术学院毕业，互联网老兵一枚，对广告，支付、金融有一定的认识，目前在养老院活着</view>
 </view>
