@@ -1,0 +1,10 @@
+<view class="cu-bar margin-top bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>pdf预览（wx.openDocument）
+  </view>
+</view>
+<view class="grid col-1 padding-sm">
+  <view class="margin-tb-xs text-center" wx:for="{{pdfWxList}}" wx:key wx:if="{{item.name!='white'}}">
+    <button bindtap='toViewWx' data-url='{{item.url}}' class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>

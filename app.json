@@ -2,6 +2,8 @@
   "pages":[
     "pages/intro/intro",
     "pages/post/post",
+    "pages/tool/pdf/pdf",
+    "pages/view/home/home",
     "pages/post/post-detail/post-detail",
     "pages/post/post-comment/post-comment",
     "pages/movie/movie",
@@ -51,6 +53,9 @@
       "connectSocket": 20000,
       "uploadFile": 20000,
       "downloadFile": 20000
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

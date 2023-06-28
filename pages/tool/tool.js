@@ -45,6 +45,21 @@ Page({
         })
     },
     showFile() {
+        wx.navigateTo({
+            url: 'pdf/pdf',
+            success:function() {
+              console.log("jump success")
+            },
+            fail:function() {
+              console.log("jump fail")
+            },
+            complete:function() {
+              console.log("jump complete") 
+            }
+          })
+    },
+    /** 
+    showFile2() {
         wx.downloadFile({
             url: 'https://test-jpfile1.oss-cn-shenzhen.aliyuncs.com/Bom/bom/2022/1/19/2022011911355693652034.PDF',
             success: function (res) {                           
@@ -68,6 +83,7 @@ Page({
             }
         })
     },
+    */
     /**
      * Lifecycle function--Called when page load
      */
