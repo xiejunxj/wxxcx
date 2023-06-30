@@ -38,6 +38,12 @@ Page({
     ],
     pdfWxList: [
       {
+        title: '云仓货品清单.pdf',
+        name: 'red',
+        color: '#e54d42',
+        url: 'https://test-jpfile1.oss-cn-shenzhen.aliyuncs.com/Bom/bom/2022/1/19/2022011911355693652034.PDF'
+      },
+      {
         title: '共产党宣言.pdf',
         name: 'red',
         color: '#e54d42',
@@ -73,6 +79,7 @@ Page({
             const filePath = res.tempFilePath
             wx.openDocument({
                 filePath: filePath,
+                fileType: 'pdf',
                 success: function(res) {
                 }
             })
