@@ -36,17 +36,12 @@ Page({
         url: 'https://byfile.disscode.cn/blog/2021/wx/pdf/05.pdf'
       },
     ],
-    pdfWxList: [{
-        title: '城南旧事.pdf',
+    pdfWxList: [
+      {
+        title: '共产党宣言.pdf',
         name: 'red',
         color: '#e54d42',
-        url: 'https://byfile.disscode.cn/blog/2021/wx/pdf/01.pdf'
-      },
-      {
-        title: '鲁滨逊漂流记.pdf',
-        name: 'orange',
-        color: '#f37b1d',
-        url: 'https://byfile.disscode.cn/blog/2021/wx/pdf/02.pdf'
+        url: 'https://zxyj.lcu.edu.cn/docs/20211210164842026307.pdf'
       }
     ],
     markdownList: [{
@@ -72,7 +67,6 @@ Page({
   },
   // 微信
   toViewWx: function (e) {
-    console.log(e.currentTarget.dataset.url)
     wx.downloadFile({
         url: e.currentTarget.dataset.url,//可以是后台传过来的路径
         success: function(res) {
@@ -80,12 +74,11 @@ Page({
             wx.openDocument({
                 filePath: filePath,
                 success: function(res) {
-                    //成功
                 }
             })
         },
         fail: function (res) {
-            console.log(res);
+            console.log("fail," + res);
         }
     })
   },

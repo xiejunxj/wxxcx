@@ -3,7 +3,7 @@
     "pages/intro/intro",
     "pages/post/post",
     "pages/tool/pdf/pdf",
-    "pages/view/home/home",
+    "pages/view/view",
     "pages/post/post-detail/post-detail",
     "pages/post/post-comment/post-comment",
     "pages/movie/movie",

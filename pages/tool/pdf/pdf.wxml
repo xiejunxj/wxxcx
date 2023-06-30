@@ -1,6 +1,6 @@
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="cuIcon-title text-blue"></text>pdf预览（wx.openDocument）
+    <text class="cuIcon-title text-blue"></text>pdf预览
   </view>
 </view>
 <view class="grid col-1 padding-sm">
