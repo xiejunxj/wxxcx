@@ -55,12 +55,6 @@ Page({
         name: 'red',
         color: '#e54d42',
         url: 'https://byfile.disscode.cn/blog/2021/wx/mk/%E3%80%90BLOG%E3%80%91hexo%E6%90%AD%E5%BB%BAblog%E6%95%99%E7%A8%8B.md'
-      },
-      {
-        title: 'github自定义主页秀.md',
-        name: 'orange',
-        color: '#f37b1d',
-        url: 'https://byfile.disscode.cn/blog/2021/wx/mk/%E3%80%90BLOG%E3%80%91hexo%E6%90%AD%E5%BB%BAblog%E6%95%99%E7%A8%8B.md'
       }
     ]
   },
