@@ -37,6 +37,8 @@ Page({
                       mask:true,
                       icon:"success"
                     })
+                    var dataObj = require("../../data/data.js");
+                    wx.setStorageSync('postList', dataObj.postList);
                 },
                 fail:function(e) {
                     console.log(e)
