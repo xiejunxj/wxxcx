@@ -17,7 +17,6 @@ App({
     // })
   },
   globalData: {
-    g_isPlayingMusic: false,
-    maoyanBase:"https://m.maoyan.com/ajax/"
+    isPlayingMusic: false
   }
 })

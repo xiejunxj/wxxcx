@@ -18,14 +18,16 @@ Page({
      */
     onLoad(options) {
         var postId = options.id;
+        console.log("onLoad postId is " + postId);
         this.dbPost = new DBPost(postId);
         this.postData = this.dbPost.getPostItemById().data;
         this.setData({
             post: this.postData
         });
         this.addReadingTimes();
-        this.setMusicMonitor();
+        console.log("here we ready to set music monitor");
         this.initMusicStatus();
+        this.setMusicMonitor();
     },
     setMusicMonitor() {
         var that = this;

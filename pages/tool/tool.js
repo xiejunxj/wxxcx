@@ -29,21 +29,15 @@ Page({
     },
     clearCache() {
         this.showModal("缓存清理", "确定要清除本地缓存吗？", function(){
-            wx.clearStorage({
-                success:function(msg) {
-                    wx.showToast({
-                      title: '缓存清理成功',
-                      duration: 1000,
-                      mask:true,
-                      icon:"success"
-                    })
-                    var dataObj = require("../../data/data.js");
-                    wx.setStorageSync('postList', dataObj.postList);
-                },
-                fail:function(e) {
-                    console.log(e)
-                }
-            })
+            wx.clearStorageSync()
+            wx.showToast({
+                title: '缓存清理成功',
+                duration: 1000,
+                mask:true,
+                icon:"success"
+              })
+            var dataObj = require("../../data/data.js")
+            wx.setStorageSync('postList', dataObj.postList)
         })
     },
     showFile() {
