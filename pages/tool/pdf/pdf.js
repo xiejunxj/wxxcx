@@ -41,7 +41,7 @@ Page({
         title: '云仓货品清单.pdf',
         name: 'red',
         color: '#e54d42',
-        url: 'https://test-jpfile1.oss-cn-shenzhen.aliyuncs.com/Bom/bom/2022/1/19/2022011911355693652034.PDF'
+        url: 'https://www.jxhaha.site/files/test.pdf'
       }
     ],
     markdownList: [{
